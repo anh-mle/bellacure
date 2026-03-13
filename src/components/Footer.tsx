@@ -1,4 +1,5 @@
 import { CALENDLY_URL, MAPS_URL } from '../config'
+import { lotusUrl } from '../assets'
 import './Footer.css'
 
 const quickLinks = [
@@ -22,7 +23,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/asset/lotus.svg" alt="" aria-hidden="true" className="footer-lotus-icon" style={{ width: 22, height: 22, opacity: 0.8 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" className="footer-lotus-icon" style={{ width: 22, height: 22, opacity: 0.8 }} />
               Bellacure Nails and Spa
             </div>
             <p>

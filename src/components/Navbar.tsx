@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { CALENDLY_URL } from '../config'
+import { logoUrl } from '../assets'
 import './Navbar.css'
 
 const navLinks = [
@@ -24,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <a href="#home" className="navbar-logo" onClick={closeMenu}>
-        <img src="/asset/logo.png" alt="Bellacure" className="navbar-logo-img" />
+        <img src={logoUrl} alt="Bellacure" className="navbar-logo-img" />
       </a>
 
       <ul className={`navbar-links${menuOpen ? ' open' : ''}`}>

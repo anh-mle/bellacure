@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Reveal from './Reveal'
+import { lotusUrl } from '../assets'
 import './Services.css'
 
 type Category = 'All' | 'Manicure' | 'Pedicure' | 'Nail Art' | 'Add-Ons'
@@ -91,7 +92,7 @@ export default function Services() {
       <div className="services-inner">
         <Reveal className="services-header">
           <div className="lotus-ornament">
-            <img src="/asset/lotus.svg" alt="" aria-hidden="true" style={{ width: 32, height: 32, opacity: 0.55 }} />
+            <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 32, height: 32, opacity: 0.55 }} />
           </div>
           <p className="section-label">What We Offer</p>
           <h2 className="section-title">Our Services</h2>

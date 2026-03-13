@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .contact-info .section-subtitle {
@@ -133,8 +133,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 20px;
+  height: 100%;
 }
 
 .booking-content h3 {

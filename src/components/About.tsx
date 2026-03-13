@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { lotusUrl } from '../assets'
 import './About.css'
 
 const values = [
@@ -46,7 +47,7 @@ export default function About() {
         <div className="about-text">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src="/asset/lotus.svg" alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
             </div>
             <p className="section-label">About Us</p>
           </Reveal>

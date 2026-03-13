@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import { CALENDLY_URL } from '../config'
+import { lotusUrl } from '../assets'
 import './Home.css'
 
 export default function Home() {
@@ -16,7 +17,7 @@ export default function Home() {
         <div className="home-text">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src="/asset/lotus.svg" alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
             </div>
             <p className="home-tagline">Luxury Nail Salon</p>
           </Reveal>

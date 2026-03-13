@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import { CALENDLY_URL, MAPS_URL } from '../config'
+import { lotusUrl } from '../assets'
 import './Contact.css'
 
 export default function Contact() {
@@ -9,13 +10,13 @@ export default function Contact() {
         <div className="contact-info">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src="/asset/lotus.svg" alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
             </div>
             <p className="section-label">Get In Touch</p>
           </Reveal>
 
           <Reveal delay={100}>
-            <h2 className="section-title">Book Your<br />Appointment</h2>
+            <h2 className="section-title">Book Your Appointment</h2>
           </Reveal>
 
           <Reveal delay={180}>
@@ -64,10 +65,10 @@ export default function Contact() {
 
         <Reveal direction="right" delay={150} className="contact-booking-panel">
           <div className="booking-lotus-bg">
-            <img src="/asset/lotus.svg" alt="" aria-hidden="true" className="booking-lotus-decor" style={{ width: 280, height: 280, opacity: 0.1 }} />
+            <img src={lotusUrl} alt="" aria-hidden="true" className="booking-lotus-decor" style={{ width: 280, height: 280, opacity: 0.1 }} />
           </div>
           <div className="booking-content">
-            <img src="/asset/lotus.svg" alt="" aria-hidden="true" style={{ width: 48, height: 48, opacity: 0.5 }} />
+            <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 48, height: 48, opacity: 0.5 }} />
             <h3>Ready to Glow?</h3>
             <p>
               Book your appointment online in seconds. Choose your service,
@@ -81,7 +82,6 @@ export default function Contact() {
             >
               Book via Calendly
             </a>
-            <p className="booking-note">No account needed · Instant confirmation</p>
           </div>
         </Reveal>
       </div>
