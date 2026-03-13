@@ -2,12 +2,6 @@ import Reveal from './Reveal'
 import { CALENDLY_URL, MAPS_URL } from '../config'
 import './Contact.css'
 
-const hours = [
-  { day: 'Monday – Friday', time: '9:00 AM – 7:00 PM' },
-  { day: 'Saturday', time: '9:00 AM – 6:00 PM' },
-  { day: 'Sunday', time: '10:00 AM – 5:00 PM' },
-]
-
 export default function Contact() {
   return (
     <section id="contact" className="contact">
