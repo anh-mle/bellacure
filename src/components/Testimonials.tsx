@@ -150,7 +150,7 @@ export default function Testimonials() {
       <div className="testimonials-inner">
         <Reveal className="testimonials-header">
           <div className="lotus-ornament">
-            <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 36, height: 36, opacity: 0.55 }} />
+            <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 50, height: 50, opacity: 0.55 }} />
           </div>
           <p className="section-label">Google Reviews</p>
           <h2 className="section-title">What Our Clients Say</h2>
