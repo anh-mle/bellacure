@@ -281,7 +281,7 @@ const services = [
   },
   {
     category: 'Pedicure',
-    icon: '🫧',
+    icon: '🦶🏻',
     title: 'Regular Pedicure',
     description: 'Signature pedicure includes nail shaping & filing, hot towel, cuticle treatment, relaxing hand massage, and a regular polish of your choice',
     price: '$33',
@@ -289,7 +289,7 @@ const services = [
   },
   {
     category: 'Pedicure',
-    icon: '🫧',
+    icon: '🦶🏻',
     title: 'Reflexology',
     description: 'Extra 10 minutes of massage',
     price: '$15',
@@ -297,7 +297,7 @@ const services = [
   },
   {
     category: 'Pedicure',
-    icon: '🫧',
+    icon: '🦶🏻',
     title: 'Callus Add-on',
     description: 'Callus Add-on for Pedicure',
     price: '$5',
@@ -305,7 +305,7 @@ const services = [
   },
   {
     category: 'Pedicure',
-    icon: '🫧',
+    icon: '🦶🏻',
     title: 'Gel Color Add-on',
     description: 'Gel Color Add-on for Pedicure',
     price: '$12',
@@ -313,7 +313,7 @@ const services = [
   },
   {
     category: 'Pedicure',
-    icon: '🫧',
+    icon: '🦶🏻',
     title: 'Gel Polish Change Toes',
     description: 'Fresh gel color change for toes.',
     price: '$27',
@@ -321,7 +321,7 @@ const services = [
   },
   {
     category: 'Spa Pedicure',
-    icon: '🧖🏼‍♀️',
+    icon: '🫧',
     title: 'Aroma Therapy',
     description: 'This 4-step Aroma Spa delivers a joyful and relaxing sensation. A special aromatic soak, sugar scrub, moisturizing mask, gentle massage and more will give you a serene spa experience.',
     price: '$48',
@@ -329,7 +329,7 @@ const services = [
   },
   {
     category: 'Spa Pedicure',
-    icon: '🧖🏼‍♀️',
+    icon: '🫧',
     title: 'Jelly Spa Pedicure',
     description: 'A 5-step spa, our pedicurist soaks your feet in a basin of jelly-like fluid that hydrates and exfoliates the skin. Together with the hot stone therapy, this pedicure will nourish, moisturize, and sooth your feet..',
     price: '$58',
@@ -337,7 +337,7 @@ const services = [
   },
   {
     category: 'Spa Pedicure',
-    icon: '🧖🏼‍♀️',
+    icon: '🫧',
     title: 'Ultimate Spa Pedicure',
     description: 'A full service pedicure with 6- step spa utilizes mineral bath, helps to stimulate tired and achy legs, improves skin tone and texture.',
     price: '$68',
