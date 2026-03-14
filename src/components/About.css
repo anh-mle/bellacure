@@ -13,7 +13,7 @@
 }
 
 .about-images-wrap {
-  height: 520px;
+  height: 620px;
   position: relative;
 }
 
@@ -26,9 +26,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 72%;
+  width: 70%;
   height: 80%;
   object-fit: cover;
+  border-radius: 15px;
 }
 
 .about-img-accent {
@@ -39,6 +40,7 @@
   height: 55%;
   object-fit: cover;
   border: 6px solid var(--color-white);
+  border-radius: 15px;
 }
 
 .about-img-box {
@@ -49,6 +51,7 @@
   background-color: var(--color-primary);
   width: 120px;
   height: 120px;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,6 +91,7 @@
   padding: 20px;
   background-color: var(--color-primary-light);
   border-left: 2px solid var(--color-primary);
+  border-radius: 8px;
 }
 
 .about-value-item h4 {

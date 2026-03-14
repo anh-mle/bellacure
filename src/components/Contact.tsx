@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="contact-info">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 50, height: 50, opacity: 0.6 }} />
             </div>
             <p className="section-label">Get In Touch</p>
           </Reveal>
@@ -48,7 +48,7 @@ export default function Contact() {
                 <div className="contact-detail-icon">📞</div>
                 <div className="contact-detail-text">
                   <h4>Phone</h4>
-                  <p><a href="tel:+13105550192" className="address-link">(267) 313-4225</a></p>
+                  <p><a href="tel:+12673134335" className="address-link">(267) 313-4225</a></p>
                 </div>
               </div>
               <div className="contact-detail-item">

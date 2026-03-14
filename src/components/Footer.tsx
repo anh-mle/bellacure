@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src={lotusUrl} alt="" aria-hidden="true" className="footer-lotus-icon" style={{ width: 22, height: 22, opacity: 0.8 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" className="footer-lotus-icon" style={{ width: 50, height: 50, opacity: 0.8 }} />
               Bellacure Nails and Spa
             </div>
             <p>
@@ -72,7 +72,7 @@ export default function Footer() {
                   622 Gravel Pike SPC #113<br />East Greenville, PA 18041
                 </a>
               </p>
-              <p><a href="tel:+13105550192" className="footer-address-link">(267) 313-4225</a></p>
+              <p><a href="tel:+12673134225" className="footer-address-link">(267) 313-4225</a></p>
               <p><a href="mailto:bellacurepa@gmail.com" className="footer-address-link">bellacurepa@gmail.com</a></p>
               <p>Mon–Fri: 10AM – 7PM<br />Sat: 9AM – 6PM<br />Sun: 10AM – 5PM</p>
             </address>

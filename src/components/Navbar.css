@@ -24,7 +24,8 @@
 }
 
 .navbar-logo-img {
-  height: 48px;
+  margin-top: 15px;
+  height: 80px;
   width: auto;
   display: block;
   object-fit: contain;
@@ -69,6 +70,7 @@
 .navbar-book {
   padding: 10px 24px;
   background-color: var(--color-dark);
+  border-radius: 6px;
   color: var(--color-white) !important;
   font-size: 11px !important;
   letter-spacing: 2px !important;

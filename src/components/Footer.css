@@ -65,6 +65,7 @@
   width: 36px;
   height: 36px;
   background-color: rgba(255, 248, 246, 0.08);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;

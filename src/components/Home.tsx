@@ -17,7 +17,7 @@ export default function Home() {
         <div className="home-text">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 90, height: 90, opacity: 0.6 }} />
             </div>
             <p className="home-tagline">Luxury Nail Salon</p>
           </Reveal>

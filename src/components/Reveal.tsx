@@ -23,7 +23,8 @@ export default function Reveal({
       ([entry]) => {
         if (entry.isIntersecting) {
           el.classList.add('revealed')
-          observer.disconnect()
+        } else {
+          el.classList.remove('revealed')
         }
       },
       { threshold: 0.12 }

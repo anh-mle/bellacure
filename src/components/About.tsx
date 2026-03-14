@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-import { lotusUrl } from '../assets'
+import { lotusUrl, nailphoto1, nailphoto2 } from '../assets'
 import './About.css'
 
 const values = [
@@ -29,25 +29,20 @@ export default function About() {
           <div className="about-images">
             <img
               className="about-img-main"
-              src="https://images.unsplash.com/photo-1632345031435-8727f592d8db?w=600&auto=format&fit=crop"
-              alt="Nail technician at work"
+              src={nailphoto1}
             />
             <img
               className="about-img-accent"
-              src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&auto=format&fit=crop"
-              alt="Beautiful nail art"
+              src={nailphoto2}
             />
-            <div className="about-img-box">
-              <span className="box-number">1000+</span>
-              <span className="box-label">Happy Clients</span>
-            </div>
+
           </div>
         </Reveal>
 
         <div className="about-text">
           <Reveal>
             <div className="lotus-ornament lotus-ornament-left">
-              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 28, height: 28, opacity: 0.6 }} />
+              <img src={lotusUrl} alt="" aria-hidden="true" style={{ width: 50, height: 50, opacity: 0.6 }} />
             </div>
             <p className="section-label">About Us</p>
           </Reveal>
