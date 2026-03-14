@@ -48,7 +48,7 @@ export default function About() {
           </Reveal>
 
           <Reveal delay={100}>
-            <h2 className="section-title">Where Art Meets<br />Self-Care</h2>
+            <h2 className="section-title">Where Art Meets Self-Care</h2>
           </Reveal>
 
           <Reveal delay={180}>
