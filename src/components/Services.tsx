@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Reveal from './Reveal'
-import { lotusUrl } from '../assets'
+import { lotusUrl, menuPdf } from '../assets'
 import './Services.css'
 
 type Category = 'Manicures' | 'Nail Enhancement' | 'Dip Power' | 'Waxing' | 'Pedicure' | 'Spa Pedicure' | 'Add-Ons'
@@ -403,6 +403,8 @@ export default function Services() {
           <p className="services-note">
             Prices may vary based on nail length and complexity.{' '}
             <a href="#contact">Contact us</a> for a custom quote.
+            {' '}·{' '}
+            <a href={menuPdf} target="_blank" rel="noopener noreferrer">View full menu (PDF)</a>
           </p>
         </Reveal>
       </div>
