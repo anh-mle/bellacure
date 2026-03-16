@@ -90,36 +90,6 @@ const reviews = [
     date: 'February 2025',
     text: 'Absolutely love this salon! The staff is so welcoming and my nails always come out perfect. Been coming here for over a year and will never go anywhere else.',
   },
-  {
-    name: 'Linh T.',
-    date: 'February 2025',
-    text: 'Best nail salon in the area hands down. The jelly spa pedicure is absolutely heavenly — my feet have never felt so soft. Very clean and relaxing atmosphere.',
-  },
-  {
-    name: 'Rachel S.',
-    date: 'January 2025',
-    text: 'I got the dip powder ombré and it is stunning. Everyone keeps asking where I get my nails done. The technicians really take their time to make sure everything is perfect.',
-  },
-  {
-    name: 'Amanda K.',
-    date: 'January 2025',
-    text: 'Such a hidden gem! I came in for a gel manicure and left feeling like royalty. The salon is beautiful, super clean, and the prices are very reasonable.',
-  },
-  {
-    name: 'Priya S.',
-    date: 'December 2024',
-    text: "I took my mom here as a birthday treat and we both had the ultimate spa pedicure. She cried happy tears — that's how good it was. The hot stone massage is unreal.",
-  },
-  {
-    name: 'Sophia N.',
-    date: 'December 2024',
-    text: 'I brought my daughter for the kids manicure and we both had a wonderful experience. The staff was so sweet and patient. We will definitely be back!',
-  },
-  {
-    name: 'Marie L.',
-    date: 'November 2024',
-    text: 'My go-to spot for self-care. The ultimate spa pedicure is worth every penny — the hot stone massage is incredible. Always leave feeling refreshed and beautiful.',
-  },
 ]
 
 function StarRating() {
@@ -135,6 +105,7 @@ function StarRating() {
 export default function Testimonials() {
   const [current, setCurrent] = useState(0)
   const total = reviews.length
+  const [dragStartX, setDragStartX] = useState<number | null>(null)
 
   const prev = () => setCurrent((c) => (c - 1 + total) % total)
   const next = () => setCurrent((c) => (c + 1) % total)
@@ -144,6 +115,28 @@ export default function Testimonials() {
     reviews[(current + 1) % total],
     reviews[(current + 2) % total],
   ]
+
+  // Touch swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setDragStartX(e.touches[0].clientX)
+  }
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (dragStartX === null) return
+    const delta = dragStartX - e.changedTouches[0].clientX
+    if (Math.abs(delta) > 50) delta > 0 ? next() : prev()
+    setDragStartX(null)
+  }
+
+  // Mouse drag
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setDragStartX(e.clientX)
+  }
+  const handleMouseUp = (e: React.MouseEvent) => {
+    if (dragStartX === null) return
+    const delta = dragStartX - e.clientX
+    if (Math.abs(delta) > 50) delta > 0 ? next() : prev()
+    setDragStartX(null)
+  }
 
   return (
     <section className="testimonials">
@@ -157,7 +150,13 @@ export default function Testimonials() {
         </Reveal>
 
         <Reveal delay={150}>
-          <div className="testimonials-cards">
+          <div
+            className="testimonials-cards"
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+          >
             {visible.map((review, i) => (
               <div key={`${review.name}-${i}`} className={`testimonial-card${i === 1 ? ' featured' : ''}`}>
                 <StarRating />

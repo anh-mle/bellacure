@@ -71,6 +71,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   align-items: start;
+  cursor: grab;
+  user-select: none;
+}
+
+.testimonials-cards:active {
+  cursor: grabbing;
 }
 
 .testimonial-card {

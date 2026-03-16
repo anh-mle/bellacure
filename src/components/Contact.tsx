@@ -48,7 +48,7 @@ export default function Contact() {
                 <div className="contact-detail-icon">📞</div>
                 <div className="contact-detail-text">
                   <h4>Phone</h4>
-                  <p><a href="tel:+12673134335" className="address-link">(267) 313-4225</a></p>
+                  <p><a href="tel:+12673134225" className="address-link">(267) 313-4225</a></p>
                 </div>
               </div>
               <div className="contact-detail-item">
