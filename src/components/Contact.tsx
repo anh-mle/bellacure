@@ -80,7 +80,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="btn-primary booking-btn"
             >
-              Book via Calendly
+              Book Now
             </a>
           </div>
         </Reveal>
